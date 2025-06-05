@@ -3,685 +3,491 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Economic Toll of "Forever Wars"</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!--
-    Infographic Narrative & Structure Plan: (Content unchanged, styling updated)
-    Theme: The Devastating Economic Impact of Modern "Forever Wars"
-    Sections:
-    1. Hero: Title, Intro, Global Military Spending
-    2. Global Economic Burden Overview
-    3. Case Study - Ukraine
-    4. Case Study - Gaza
-    5. Case Study - Kashmir
-    6. Case Study - Sudan
-    7. Case Study - DRC/M23
-    8. The Specter - China/Taiwan
-    9. Common Threads & Long-Term Scars: Conflict Trap
-    10. Conclusion
-
-    New Color Palette (Inspired by visionofhumanity.org):
-    - VoH_DarkBlue: #00234C
-    - VoH_PrimaryBlue: #0065B3
-    - VoH_LightBlue: #7FBCD9
-    - VoH_DarkestGrey: #212529 (for main text)
-    - VoH_DarkGrey: #495057 (for secondary text)
-    - VoH_MediumGrey: #adb5bd (for borders, subtle text)
-    - VoH_LightGrey: #f0f3f5 (for backgrounds)
-    - VoH_White: #FFFFFF
-    - VoH_AccentRed: #d9534f (similar to a muted version of the original Coral Red, for negative impacts)
-    - VoH_AccentYellow: #f0ad4e (similar to a muted version of the original Sunglow Yellow)
-    - VoH_AccentGreen: #5cb85c (similar to a muted version of the original Caribbean Green)
-
-    Font: Lato
-    -->
+    <title>Economic Toll of Forever Wars - Embedded</title>
+    
+    <!-- Vision of Humanity Actual CSS -->
     <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            background-color: #f0f3f5; /* VoH_LightGrey */
-            color: #212529; /* VoH_DarkestGrey */
+        /* Vision of Humanity Original CSS */
+        .dv-toolbox-container .error {
+            color: red;
         }
-        .chart-container {
-            position: relative;
+        .php-error #adminmenuback,
+        .php-error #adminmenuwrap {
+            margin-top: -2em;
+        }
+        .dataTables_wrapper .dataTables_length select {
+            width: 53px;
+        }
+        .dataTables_length .label {
             width: 100%;
-            max-width: 550px; /* Slightly reduced max-width for a tighter feel */
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px; 
-            max-height: 350px;
         }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 320px;
-            }
+        #adminmenu {
+            height: 2116px !important;
         }
-        .stat-card {
-            background-color: #FFFFFF; /* VoH_White */
-            border-radius: 0.25rem; /* Sharper corners */
-            border: 1px solid #dee2e6; /* VoH_MediumGrey variant for border */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* More subtle shadow */
-            padding: 1.25rem; /* Slightly reduced padding */
-            margin-bottom: 1.5rem;
+        .custome-toolbox thead {
+            background-color: #999;
         }
-        .big-number {
-            font-size: 2.5rem; /* Reduced size */
-            font-weight: 700; /* Bold */
-            color: #00234C; /* VoH_DarkBlue */
-            line-height: 1.1;
+        .custome-create-btn a {
+            width: 200px;
+            background-color: #151f6d;
+            border-color: #151f6d !important;
+            font-size: 18px;
+            border-radius: 25px;
+            margin: 0 28px 0 0;
         }
+        .custome-edit-btn,
+        .custome-submit-btn button,
+        .custome-p-btn,
+        .c-submit-btn {
+            background-color: #2ea3f2;
+            border-color: #2ea3f2 !important;
+            border-radius: 30px;
+            padding: 8px 40px;
+        }
+        .custome-create-btn a:hover,
+        .custome-create-btn a:active,
+        .custome-create-btn a:focus {
+            background-color: #151f6d !important;
+            border-color: #151f6d !important;
+        }
+        .custome-edit-btn:hover,
+        .custome-edit-btn:active,
+        .custome-edit-btn:focus,
+        .custome-submit-btn button:hover,
+        .custome-submit-btn button:active,
+        .custome-submit-btn button:focus,
+        .custome-p-btn:hover,
+        .custome-p-btn:active,
+        .custome-p-btn:focus,
+        .c-submit-btn:hover,
+        .c-submit-btn:active,
+        .c-submit-btn:focus {
+            background-color: #2ea3f2 !important;
+            border-color: #2ea3f2 !important;
+            box-shadow: none;
+        }
+        .custome-submit-btn12 button {
+            background-image: none !important;
+            background-color: #151f6d !important;
+        }
+        .custome-create-btn3 {
+            margin: -70px 0 15px 0;
+        }
+        .dv-page-title h2 {
+            font-size: 26px;
+        }
+        .custome-one {
+            display: inline-block;
+            width: 24%;
+            margin: 0 40px 15px 0;
+            border: 1px solid #999;
+            text-align: center;
+            background-color: #ccc;
+        }
+        .custome-one h5 {
+            margin-top: 10px;
+        }
+        .custome-one a {
+            margin-bottom: 15px;
+        }
+        .form-group.custome-form-grp input {
+            width: 36%;
+        }
+        .dv-page-title h2 {
+            border: 1px solid #999;
+            padding: 10px 0 16px 15px;
+            color: #fff;
+            margin: 20px 0;
+            background-image: linear-gradient(80deg, #0040a2 20%, #32c2fe 90%);
+        }
+        .custome-submit-btn {
+            margin: 0 0 15px 0;
+        }
+        .custome-submit-btn12 {
+            display: inline;
+            float: right;
+            margin: -69px 19px 0 0;
+        }
+        .custome-submit-btn12 button {
+            background-color: #dc3545;
+            border-color: #dc3545 !important;
+        }
+        .custome-lesson {
+            padding: 22px 0;
+        }
+        .custome-submit-btn button {
+            border-radius: 30px;
+            padding: 8px 46px;
+            background-image: linear-gradient(80deg, #0040a2 20%, #32c2fe 90%);
+            line-height: 25px;
+            border: none !important;
+        }
+        .r-custom {
+            background: #d21825 !important;
+        }
+        .d-custom-btn {
+            border-radius: 30px;
+            padding: 8px 30px;
+        }
+        .custome-p-btn {
+            background-color: #2ea3f2;
+            border-color: #2ea3f2 !important;
+            border-radius: 30px;
+            padding: 8px 28px;
+        }
+
+        /* Extracted Vision of Humanity brand colors for our content */
+        :root {
+            --voh-primary-blue: #0d2340;
+            --voh-secondary-blue: #32c2fe;
+            --voh-accent-blue: #2ea3f2;
+            --voh-dark-blue: #0d2340;
+            --voh-red: #d21825;
+            --voh-grey: #999;
+            --voh-light-grey: #ccc;
+        }
+
+        /* Apply actual Vision of Humanity site styling */
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #000000;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Headers use Arial */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #000000;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 58px;
+        }
+
+        h2 {
+            font-size: 36px;
+            line-height: 44px;
+        }
+
+        h3 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        /* Body text */
+        p, div, span {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        /* Links */
+        a {
+            font-family: Arial, sans-serif;
+            color: #0693e3;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        /* Update our existing styles to use Arial throughout */
         .section-title {
-            font-size: 2rem; /* Reduced size */
-            font-weight: 700; /* Bold */
-            color: #00234C; /* VoH_DarkBlue */
+            font-size: 36px;
+            line-height: 44px;
+            font-weight: 700;
+            font-family: Arial, sans-serif;
+            color: #000000;
             margin-bottom: 1.5rem;
             padding-bottom: 0.75rem;
-            border-bottom: 2px solid #0065B3; /* VoH_PrimaryBlue */
+            border-bottom: 2px solid #0693e3;
         }
+
         .sub-section-title {
-            font-size: 1.25rem; /* Reduced size */
-            font-weight: 700; /* Bold */
-            color: #0065B3; /* VoH_PrimaryBlue */
+            font-size: 28px;
+            line-height: 34px;
+            font-weight: 700;
+            font-family: Arial, sans-serif;
+            color: #0693e3;
             margin-top: 1rem;
             margin-bottom: 0.5rem;
         }
+
+        .header-custom {
+            background: #0d2340;
+            color: #FFFFFF;
+        }
+
+        .big-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: Arial, sans-serif;
+            color: #0693e3;
+            line-height: 1.1;
+        }
+
+        .header-custom .big-number {
+            color: #f0ad4e;
+        }
+
         .narrative-text {
-            font-size: 0.95rem; /* Slightly smaller for denser feel if needed, or keep at 1rem */
-            line-height: 1.7;
-            color: #495057; /* VoH_DarkGrey */
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 26px;
+            font-weight: 400;
+            color: #000000;
             margin-bottom: 1rem;
         }
-        .highlight-text {
-            color: #d9534f; /* VoH_AccentRed */
-            font-weight: 600;
-        }
-        .conflict-card {
-            background-color: #FFFFFF; /* VoH_White */
-            border: 1px solid #dee2e6; /* VoH_MediumGrey variant */
-        }
-        .flowchart-step {
-            background-color: #e9ecef; /* Lighter grey */
-            padding: 0.75rem 1rem;
-            border-radius: 0.25rem;
-            text-align: center;
-            font-weight: 600;
-            color: #00234C; /* VoH_DarkBlue */
-            border: 1px solid #ced4da;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .flowchart-arrow {
-            font-size: 1.75rem;
-            color: #0065B3; /* VoH_PrimaryBlue */
-            margin: 0 0.5rem;
-            line-height: 50px; 
-        }
-        .nav-sticky {
-            position: sticky;
-            top: 0;
-            background-color: rgba(255, 255, 255, 0.95); /* VoH_White with opacity */
-            z-index: 50;
-            padding: 0.5rem 0;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border-bottom: 1px solid #dee2e6;
-        }
+
         .nav-link {
-            color: #0065B3; /* VoH_PrimaryBlue */
-            padding: 0.5rem 0.75rem; /* Adjusted padding */
-            border-radius: 0.25rem;
+            color: #0693e3;
+            padding: 0.5rem 0.75rem;
+            border-radius: 25px;
             transition: background-color 0.2s, color 0.2s;
-            font-size: 0.875rem; /* Slightly smaller nav links */
+            font-size: 0.875rem;
             font-weight: 600;
+            font-family: Arial, sans-serif;
         }
+
         .nav-link:hover {
-            background-color: #e9ecef; /* Lighter grey hover */
-            color: #00234C; /* VoH_DarkBlue */
+            background-color: var(--voh-light-grey);
+            color: var(--voh-dark-blue);
         }
+
         .nav-link.active {
-            background-color: #00234C; /* VoH_DarkBlue */
-            color: #FFFFFF; /* VoH_White */
+            background-color: var(--voh-dark-blue);
+            color: #FFFFFF;
         }
-        .header-custom {
-            background-color: #00234C; /* VoH_DarkBlue */
-            color: #FFFFFF; /* VoH_White */
+
+        /* Navigation menu styling */
+        nav {
+            font-family: Arial, sans-serif;
         }
-        .header-custom .big-number {
-            color: #f0ad4e; /* VoH_AccentYellow for header big number */
+
+        nav ul {
+            font-family: Arial, sans-serif;
         }
-        .header-custom .narrative-text {
-            color: #adb5bd; /* VoH_MediumGrey for header narrative */
+
+        nav li {
+            font-family: Arial, sans-serif;
         }
-         .header-custom .stat-card {
-            background-color: rgba(255, 255, 255, 0.1); /* Subtle card in header */
-            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        nav a {
+            font-family: Arial, sans-serif;
+        }
+        /* Iframe wrapper styles */
+        .iframe-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .content-frame {
+            width: 100%;
+            min-height: 800px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            background: var(--voh-white);
+            overflow: hidden;
+        }
+
+        /* Ensure no shadows anywhere */
+        * {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .iframe-container {
+                padding: 10px;
+            }
+            .content-frame {
+                min-height: 600px;
+            }
+            
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            h3 { font-size: 1.25rem; }
         }
     </style>
 </head>
-<body class="antialiased">
+<body>
+    <div class="iframe-container">
+        <div class="content-frame">
+            <!-- Your infographic content starts here -->
+                                <div style="font-family: Arial, sans-serif; background-color: #ffffff; color: #000000;">>
+                
+                <!-- Navigation removed to eliminate grey header -->
 
-    <nav class="nav-sticky hidden md:block">
-        <div class="container mx-auto px-4">
-            <ul class="flex flex-wrap justify-center space-x-1">
-                <li><a href="#intro" class="nav-link active">Introduction</a></li>
-                <li><a href="#global-burden" class="nav-link">Global Burden</a></li>
-                <li><a href="#ukraine" class="nav-link">Ukraine</a></li>
-                <li><a href="#gaza" class="nav-link">Gaza</a></li>
-                <li><a href="#kashmir" class="nav-link">Kashmir</a></li>
-                <li><a href="#sudan" class="nav-link">Sudan</a></li>
-                <li><a href="#drc" class="nav-link">DRC/M23</a></li>
-                <li><a href="#china-taiwan" class="nav-link">China/Taiwan</a></li>
-                <li><a href="#common-threads" class="nav-link">Common Threads</a></li>
-                <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
-            </ul>
+                <!-- Container -->
+                <div style="max-width: 1200px; margin: 0 auto; padding: 1rem;">
+
+                    <!-- Header -->
+                    <header id="intro" style="text-align: center; padding: 2.5rem 0; background-color: #0d2340; color: #FFFFFF; border-radius: 0; box-shadow: none; margin-bottom: 2.5rem;">
+                        <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.75rem; margin-top: 0; color: #FFFFFF;">The Protracted Price of Conflict</h1>
+                        <p style="font-size: 1.25rem; margin-bottom: 1.25rem; color: #adb5bd; margin-top: 0;">An Economic Analysis of Contemporary "Forever Wars"</p>
+                                                    <div style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 0; display: inline-block; padding: 0.75rem 1.25rem;">
+                            <p style="font-size: 0.875rem; margin-bottom: 0.25rem; color: #adb5bd; margin-top: 0;">Global Military Expenditure (2024)</p>
+                            <div style="font-size: 2.5rem; font-weight: 700; color: #f0ad4e; line-height: 1.1;">~$2.718 Trillion</div>
+                            <p style="font-size: 0.75rem; margin-top: 0.25rem; color: #adb5bd; margin-bottom: 0;">(2.5% of Global GDP)</p>
+                        </div>
+                        <p style="font-size: 0.875rem; margin-top: 1.25rem; color: #adb5bd; margin-bottom: 0; padding: 0 0.5rem;">
+                            "Forever wars" represent lasting states of belligerence with profound and multifaceted economic consequences, extending far beyond direct military engagement to encompass sustained geopolitical tensions and continuous resource drains.
+                        </p>
+                    </header>
+
+                    <!-- Global Burden Section -->
+                    <section id="global-burden" style="margin-bottom: 2.5rem;">
+                        <h2 style="font-size: 2rem; font-weight: 700; color: #00234C; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #0065B3; text-align: center;">The Global Economic Burden: An Overview</h2>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #495057; margin-bottom: 1.5rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+                            Protracted conflicts impose a consistent and devastating array of economic costs. These include colossal direct financial expenditures, pervasive lost economic activity, and enduring negative impacts on long-term growth and human development.
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                                                            <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); padding: 1.25rem; text-align: center;">
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Direct Financial Costs</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Massive spending on military, aid, and reconstruction diverts resources from development.</p>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #d9534f; line-height: 1.1;">Trillions Diverted</div>
+                            </div>
+                                                            <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); padding: 1.25rem; text-align: center;">
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Lost Economic Activity</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">GDP contraction, sectoral collapse, and disrupted trade cripple economies.</p>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #f0ad4e; line-height: 1.1;">~30% GDP Drop</div>
+                                <p style="font-size: 0.75rem; color: #495057; margin-top: 0.25rem;">(Typical 5-yr output decline)</p>
+                            </div>
+                                                            <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); padding: 1.25rem; text-align: center;">
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Long-Term Scars</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Erosion of human capital, soaring debt, and institutional decay hinder future growth.</p>
+                                <div style="font-size: 2.5rem; font-weight: 700; color: #0065B3; line-height: 1.1;">Generational Impact</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ukraine Case Study -->
+                                            <section id="ukraine" style="margin-bottom: 2.5rem; background-color: #FFFFFF; border: 1px solid #dee2e6; border-radius: 0; padding: 1.5rem; box-shadow: none;">
+                        <h2 style="font-size: 2rem; font-weight: 700; color: #00234C; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #0065B3;">Case Study: Ukraine - Europe's Economic Shockwave</h2>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #495057; margin-bottom: 1.5rem;">The full-scale invasion in February 2022 has inflicted catastrophic economic damage, with far-reaching global consequences. Ukraine's economy faces immense direct costs, severe contraction, and a massive humanitarian crisis.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; align-items: start;">
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Direct Financial Burdens</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Ukraine's direct infrastructure damage reached $176 billion by Dec 2024, with reconstruction needs estimated at $524 billion over the next decade.</p>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center; margin-bottom: 1rem;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">Infrastructure Damage</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #d9534f; line-height: 1.1;">$176 Billion</div>
+                                </div>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">10-Year Reconstruction Needs</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #0065B3; line-height: 1.1;">$524 Billion</div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Economic Contraction & Human Impact</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Ukraine's GDP plummeted by approximately 30.4% in 2022. The war has also led to massive human displacement.</p>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center; margin-bottom: 1rem;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">GDP Change (2022)</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #d9534f; line-height: 1.1;">-30.4%</div>
+                                </div>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">People Displaced</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #0065B3; line-height: 1.1;">~11 Million 👤</div>
+                                    <p style="font-size: 0.75rem; color: #495057; margin-top: 0.25rem;">(Refugees & IDPs)</p>
+                                </div>
+                                
+                                <p style="font-size: 0.875rem; color: #495057; margin-top: 1rem;">The agricultural sector, a cornerstone of Ukraine's economy, has suffered damages and losses nearing $84 billion, impacting global food security.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Gaza Case Study -->
+                                            <section id="gaza" style="margin-bottom: 2.5rem; background-color: #FFFFFF; border: 1px solid #dee2e6; border-radius: 0; padding: 1.5rem; box-shadow: none;">
+                        <h2 style="font-size: 2rem; font-weight: 700; color: #00234C; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #0065B3;">Case Study: Gaza - Economic Strangulation & Humanitarian Catastrophe</h2>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #495057; margin-bottom: 1.5rem;">The Israeli-Palestinian conflict, spanning over 75 years, has seen escalations inflicting unprecedented economic devastation on Gaza, leading to near-total economic collapse and a dire humanitarian crisis.</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Unprecedented Destruction</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Physical damage to structures in Gaza is estimated at $30 billion (Oct 2023-Oct 2024), with housing being the hardest hit. Total reconstruction needs for Gaza are estimated at $53 billion over the next decade.</p>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">Physical Damage (Oct 2023-Oct 2024)</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #d9534f; line-height: 1.1;">$30 Billion</div>
+                                    <p style="font-size: 0.75rem; color: #495057; margin-top: 0.5rem;">Housing: 53% • Commerce: 20% • Infrastructure: 15% • Other: 12%</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h3 style="font-size: 1.25rem; font-weight: 700; color: #0065B3; margin-top: 1rem; margin-bottom: 0.5rem;">Economic Implosion & Aid Dependency</h3>
+                                <p style="font-size: 0.875rem; color: #495057; margin-bottom: 1rem;">Gaza's economy was projected to contract by a staggering 83% in 2024. Unemployment and poverty have soared, with virtually the entire population living in poverty.</p>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center; margin-bottom: 1rem;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">Gaza GDP Contraction (2024 Proj.)</p>
+                                    <div style="font-size: 2rem; font-weight: 700; color: #d9534f; line-height: 1.1;">-83%</div>
+                                </div>
+                                
+                                                                    <div style="background-color: #FFFFFF; border-radius: 0; border: 1px solid #dee2e6; box-shadow: none; padding: 1rem; text-align: center;">
+                                    <p style="font-size: 0.75rem; color: #495057; margin-bottom: 0.25rem;">UN Flash Appeal 2025</p>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #d9534f; line-height: 1.1;">$4.073B Required</div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #5cb85c; line-height: 1.1;">$0.638B Funded</div>
+                                    <p style="font-size: 0.75rem; color: #495057; margin-top: 0.25rem;">Funding remains critically low</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Conclusion -->
+                    <section id="conclusion" style="padding: 2.5rem 0; background-color: #0d2340; color: #FFFFFF; border-radius: 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <h2 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #0693e3; text-align: center;">Conclusion: The Unacceptable Price</h2>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #adb5bd; margin-bottom: 1rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; padding: 0 0.5rem;">
+                            The economic costs of "forever wars" are devastatingly comprehensive and enduring. They impose a crushing weight that extends far beyond immediate military outlays, permeating every facet of economic and social life, often for generations.
+                        </p>
+                        <p style="font-size: 0.95rem; line-height: 1.7; color: #adb5bd; margin-top: 1rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 0; padding: 0 0.5rem;">
+                            The available evidence overwhelmingly indicates that the price of these protracted conflicts is unacceptably high. This underscores the profound economic imperative for conflict prevention, robust peacebuilding efforts, and a global commitment to addressing the root causes of protracted warfare.
+                        </p>
+                    </section>
+
+                </div>
+            </div>
+            <!-- Your infographic content ends here -->
         </div>
-    </nav>
-
-    <div class="container mx-auto p-4 md:p-6">
-
-        <header id="intro" class="text-center py-10 md:py-12 header-custom rounded-md shadow-lg mb-10">
-            <h1 class="text-3xl md:text-4xl font-bold mb-3">The Protracted Price of Conflict</h1>
-            <p class="text-lg md:text-xl mb-5 max-w-3xl mx-auto narrative-text">An Economic Analysis of Contemporary "Forever Wars"</p>
-            <div class="stat-card inline-block mx-auto py-3 px-5">
-                <p class="narrative-text text-sm mb-1">Global Military Expenditure (2024)</p>
-                <div class="big-number text-3xl md:text-4xl">~$2.718 Trillion</div>
-                <p class="narrative-text text-xs mt-1">(2.5% of Global GDP)</p>
-            </div>
-            <p class="narrative-text text-sm mt-5 max-w-3xl mx-auto px-2">
-                "Forever wars" represent lasting states of belligerence with profound and multifaceted economic consequences, extending far beyond direct military engagement to encompass sustained geopolitical tensions and continuous resource drains.
-            </p>
-        </header>
-
-        <section id="global-burden" class="mb-10">
-            <h2 class="section-title text-left md:text-center">The Global Economic Burden: An Overview</h2>
-            <p class="narrative-text text-left md:text-center max-w-3xl mx-auto mb-6">
-                Protracted conflicts impose a consistent and devastating array of economic costs. These include colossal direct financial expenditures, pervasive lost economic activity, and enduring negative impacts on long-term growth and human development.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                <div class="stat-card text-center">
-                    <h3 class="sub-section-title">Direct Financial Costs</h3>
-                    <p class="narrative-text text-sm">Massive spending on military, aid, and reconstruction diverts resources from development.</p>
-                    <div class="big-number text-[#d9534f]">Trillions Diverted</div>
-                </div>
-                <div class="stat-card text-center">
-                    <h3 class="sub-section-title">Lost Economic Activity</h3>
-                    <p class="narrative-text text-sm">GDP contraction, sectoral collapse, and disrupted trade cripple economies.</p>
-                    <div class="big-number text-[#f0ad4e]">~30% GDP Drop</div>
-                    <p class="narrative-text text-xs">(Typical 5-yr output decline)</p>
-                </div>
-                <div class="stat-card text-center">
-                    <h3 class="sub-section-title">Long-Term Scars</h3>
-                    <p class="narrative-text text-sm">Erosion of human capital, soaring debt, and institutional decay hinder future growth.</p>
-                    <div class="big-number text-[#0065B3]">Generational Impact</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="ukraine" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">Case Study: Ukraine - Europe's Economic Shockwave</h2>
-            <p class="narrative-text">The full-scale invasion in February 2022 has inflicted catastrophic economic damage, with far-reaching global consequences. Ukraine's economy faces immense direct costs, severe contraction, and a massive humanitarian crisis.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Direct Financial Burdens</h3>
-                    <p class="narrative-text text-sm">Enormous sums are required for military efforts, international aid, and addressing widespread infrastructure annihilation.</p>
-                    <div class="chart-container h-[300px] md:h-[320px]">
-                        <canvas id="ukraineCostsChart"></canvas>
-                    </div>
-                    <p class="narrative-text mt-2 text-xs text-center">Ukraine's direct infrastructure damage reached $176 billion by Dec 2024, with reconstruction needs estimated at $524 billion over the next decade.</p>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Economic Contraction & Human Impact</h3>
-                    <p class="narrative-text text-sm">Ukraine's GDP plummeted by approximately 30.4% in 2022. The war has also led to massive human displacement.</p>
-                    <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">GDP Change (2022)</p>
-                        <div class="big-number text-2xl text-[#d9534f]">-30.4%</div>
-                    </div>
-                    <div class="stat-card text-center p-3">
-                        <p class="narrative-text text-xs mb-1">People Displaced</p>
-                        <div class="big-number text-2xl text-[#0065B3]">~11 Million 👤</div>
-                        <p class="narrative-text text-xs">(Refugees & IDPs)</p>
-                    </div>
-                     <p class="narrative-text mt-3 text-sm">The agricultural sector, a cornerstone of Ukraine's economy, has suffered damages and losses nearing $84 billion, impacting global food security.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="gaza" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">Case Study: Gaza - Economic Strangulation & Humanitarian Catastrophe</h2>
-            <p class="narrative-text">The Israeli-Palestinian conflict, spanning over 75 years, has seen escalations inflicting unprecedented economic devastation on Gaza, leading to near-total economic collapse and a dire humanitarian crisis.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Unprecedented Destruction</h3>
-                    <p class="narrative-text text-sm">Physical damage to structures in Gaza is estimated at $30 billion (Oct 2023-Oct 2024), with housing being the hardest hit. Reconstruction needs are colossal.</p>
-                    <div class="chart-container h-[280px] md:h-[300px]">
-                        <canvas id="gazaDamageChart"></canvas>
-                    </div>
-                    <p class="narrative-text mt-2 text-xs text-center">Total reconstruction needs for Gaza are estimated at $53 billion over the next decade.</p>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Economic Implosion & Aid Dependency</h3>
-                    <p class="narrative-text text-sm">Gaza's economy was projected to contract by a staggering 83% in 2024. Unemployment and poverty have soared, with virtually the entire population living in poverty.</p>
-                    <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">Gaza GDP Contraction (2024 Proj.)</p>
-                        <div class="big-number text-2xl text-[#d9534f]">-83%</div>
-                    </div>
-                    <div class="chart-container h-[260px] md:h-[280px]">
-                        <canvas id="gazaAidChart"></canvas>
-                    </div>
-                    <p class="narrative-text mt-2 text-xs text-center">The UN's 2025 Flash Appeal for OPT sought $4.073 billion, but funding remains critically low.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="kashmir" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">Case Study: Kashmir - The Persistent Economic Drag</h2>
-            <p class="narrative-text">An unresolved dispute since 1947, the Kashmir conflict imposes a continuous economic burden on India and Pakistan, severely stunting regional development through massive security expenditures and lost economic potential.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Decades of Security Expenditure</h3>
-                    <p class="narrative-text text-sm">Both India and Pakistan maintain massive and sustained security expenditures related to the dispute, diverting resources from development.</p>
-                    <div class="chart-container h-[280px] md:h-[300px]">
-                        <canvas id="kashmirSpendingChart"></canvas>
-                    </div>
-                     <p class="narrative-text mt-2 text-xs text-center">Even short military standoffs can cost billions, representing a huge opportunity cost.</p>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Economic Stagnation</h3>
-                    <p class="narrative-text text-sm">Tourism and agriculture, vital for J&K's economy, are highly vulnerable to instability. Bilateral trade between India and Pakistan is severely curtailed.</p>
-                    <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">India-Pakistan Trade Diversion Loss (Annual)</p>
-                        <div class="big-number text-2xl text-[#f0ad4e]">~$500 Million</div>
-                    </div>
-                    <p class="narrative-text text-sm">The conflict hinders regional development, with Pakistan potentially losing 2% in GDP growth annually. Investment is deterred by the high-risk environment.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="sudan" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">Case Study: Sudan - Conflict, Displacement, and Economic Fragmentation</h2>
-            <p class="narrative-text">The conflict since April 2023 has plunged Sudan into an unprecedented humanitarian crisis, shattered its economy, and risks becoming a prolonged, fragmenting war with severe regional implications.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Humanitarian Catastrophe & Displacement</h3>
-                    <p class="narrative-text text-sm">Sudan faces the world's largest internal displacement crisis. Aid needs are immense but severely underfunded.</p>
-                    <div class="flex flex-col sm:flex-row justify-around my-3">
-                        <div class="stat-card text-center p-3 flex-1 m-1">
-                            <p class="narrative-text text-xs mb-1">Internally Displaced</p>
-                            <div class="big-number text-2xl text-[#0065B3]">~9 Million 👤</div>
-                        </div>
-                        <div class="stat-card text-center p-3 flex-1 m-1">
-                            <p class="narrative-text text-xs mb-1">Refugees Fled</p>
-                            <div class="big-number text-2xl text-[#7FBCD9]">~3 Million 🚶</div>
-                        </div>
-                    </div>
-                     <p class="narrative-text mt-2 text-xs text-center">The 2025 humanitarian appeal for Sudan totals $4.16 billion, but was only 13.3% funded as of May 2025.</p>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Shattered Economy & Food Insecurity</h3>
-                    <p class="narrative-text text-sm">Sudan's GDP contracted by an estimated 12% in 2023. Famine conditions are expanding.</p>
-                     <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">Sudan Real GDP Contraction (2023)</p>
-                        <div class="big-number text-2xl text-[#d9534f]">-12%</div>
-                    </div>
-                    <div class="chart-container h-[280px] md:h-[300px]">
-                        <canvas id="sudanFoodInsecurityChart"></canvas>
-                    </div>
-                    <p class="narrative-text mt-2 text-xs text-center">24.6 million people (over half the population) face high levels of acute food insecurity.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="drc" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">Case Study: DRC/M23 - The Resource Curse Amplified</h2>
-            <p class="narrative-text">Decades of conflict in eastern DRC, fueled by illicit mineral trade and insurgency, impose severe economic and human costs, perpetuating instability and underdevelopment.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Financial Toll & Illicit Economies</h3>
-                    <p class="narrative-text text-sm">Peacekeeping missions are costly, and the DRC government incurs substantial military outlays. Armed groups profit from "conflict minerals."</p>
-                    <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">M23 Monthly Revenue (Rubaya Coltan Mines)</p>
-                        <div class="big-number text-2xl text-[#f0ad4e]">~$1 Million</div>
-                    </div>
-                    <p class="narrative-text text-sm">MONUSCO's annual budget exceeds $1.1 billion. State revenue loss from M23-controlled areas is estimated at $400 million.</p>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Economic Disruption & Displacement</h3>
-                    <p class="narrative-text text-sm">The M23 insurgency has profoundly disrupted mining and agriculture in the Kivus, leading to mass displacement.</p>
-                    <div class="stat-card text-center my-3 p-3">
-                        <p class="narrative-text text-xs mb-1">Total IDPs in DRC</p>
-                        <div class="big-number text-2xl text-[#0065B3]">7.8 Million 👤</div>
-                    </div>
-                    <p class="narrative-text text-sm">28 million people in DRC face acute hunger. Over 1.4 million children in South Kivu alone had their education disrupted in early 2025.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="china-taiwan" class="mb-10 stat-card conflict-card p-4 md:p-6">
-            <h2 class="section-title">The Specter: China/Taiwan - A Potential Global Economic Cataclysm</h2>
-            <p class="narrative-text">A potential conflict over Taiwan carries unparalleled global economic ramifications due to Taiwan's critical role in semiconductors and the Taiwan Strait's importance as a shipping artery.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-start">
-                <div>
-                    <h3 class="sub-section-title">Potential Global Economic Impact (Year 1)</h3>
-                    <p class="narrative-text text-sm">Estimates suggest a war could cost the global economy $10 trillion. A blockade alone could cost $5 trillion.</p>
-                    <div class="chart-container h-[300px] md:h-[320px]">
-                        <canvas id="chinaTaiwanImpactChart"></canvas>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="sub-section-title">Semiconductor Supply Chain Catastrophe</h3>
-                    <p class="narrative-text text-sm">Taiwan produces over 90% of the world's most advanced logic chips. Disruption would halt global production of countless electronics.</p>
-                    <div class="chart-container h-[280px] md:h-[300px]">
-                        <canvas id="taiwanSemiconductorChart"></canvas>
-                    </div>
-                    <p class="narrative-text mt-2 text-xs text-center">The Taiwan Strait is a vital shipping lane; conflict would paralyze global trade.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="common-threads" class="mb-10">
-            <h2 class="section-title text-left md:text-center">Common Threads & Long-Term Scars: The "Conflict Trap"</h2>
-            <p class="narrative-text text-left md:text-center max-w-3xl mx-auto mb-6">
-                Across these diverse conflicts, common devastating themes emerge: massive opportunity costs, catastrophic erosion of human capital, crippling national debt, institutional decay, and the perpetuation of a vicious cycle known as the "conflict trap."
-            </p>
-            <div class="stat-card p-4 md:p-6">
-                <h3 class="sub-section-title text-center">The Vicious Cycle of the Conflict Trap</h3>
-                <p class="narrative-text text-center mb-5 text-sm">Conflict undermines economic performance and development, which in turn increases the risk of further conflict, trapping nations in a cycle of violence and underdevelopment.</p>
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-1.5">
-                    <div class="flowchart-step text-xs">Conflict & Violence</div>
-                    <div class="flowchart-arrow hidden md:block">➡️</div>
-                    <div class="flowchart-arrow block md:hidden self-center text-base">⬇️</div>
-                    <div class="flowchart-step text-xs">Economic Decline & Asset Destruction</div>
-                    <div class="flowchart-arrow hidden md:block">➡️</div>
-                     <div class="flowchart-arrow block md:hidden self-center text-base">⬇️</div>
-                    <div class="flowchart-step text-xs">Reduced Human Capital & Increased Poverty</div>
-                    <div class="flowchart-arrow hidden md:block">➡️</div>
-                     <div class="flowchart-arrow block md:hidden self-center text-base">⬇️</div>
-                    <div class="flowchart-step text-xs">Weak Institutions & Governance</div>
-                    <div class="flowchart-arrow hidden md:block text-xl">🔄</div>
-                    <div class="flowchart-arrow block md:hidden self-center text-xl">🔄</div>
-                </div>
-                 <p class="narrative-text text-center mt-5 text-sm">This cycle means future generations inherit diminished capital, higher debt, weakened institutions, and a greater propensity for instability.</p>
-            </div>
-        </section>
-
-        <section id="conclusion" class="py-10 header-custom rounded-md shadow-lg">
-            <h2 class="section-title text-center text-white border-b-[#f0ad4e]">Conclusion: The Unacceptable Price</h2>
-            <p class="narrative-text text-center max-w-3xl mx-auto text-gray-300 px-2">
-                The economic costs of "forever wars" are devastatingly comprehensive and enduring. They impose a crushing weight that extends far beyond immediate military outlays, permeating every facet of economic and social life, often for generations.
-            </p>
-            <p class="narrative-text text-center max-w-3xl mx-auto text-gray-300 mt-3 px-2">
-                The available evidence overwhelmingly indicates that the price of these protracted conflicts is unacceptably high. This underscores the profound economic imperative for conflict prevention, robust peacebuilding efforts, and a global commitment to addressing the root causes of protracted warfare.
-            </p>
-        </section>
-
     </div>
 
     <script>
-        const VoHPalette = {
-            darkBlue: '#00234C',
-            primaryBlue: '#0065B3',
-            lightBlue: '#7FBCD9',
-            darkestGrey: '#212529',
-            darkGrey: '#495057',
-            mediumGrey: '#adb5bd',
-            lightGrey: '#f0f3f5',
-            white: '#FFFFFF',
-            accentRed: '#d9534f',
-            accentYellow: '#f0ad4e',
-            accentGreen: '#5cb85c'
-        };
-
-        const defaultChartOptions = {
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    labels: {
-                        color: VoHPalette.darkGrey, // VoH_DarkGrey for legend text
-                        font: {
-                            family: 'Lato, sans-serif',
-                            size: 11
-                        }
-                    },
-                    position: 'bottom',
-                    align: 'center',
-                },
-                tooltip: {
-                    backgroundColor: VoHPalette.darkBlue,
-                    titleColor: VoHPalette.white,
-                    bodyColor: VoHPalette.lightGrey,
-                    borderColor: VoHPalette.primaryBlue,
-                    borderWidth: 1,
-                    titleFont: { family: 'Lato, sans-serif', weight: 'bold' },
-                    bodyFont: { family: 'Lato, sans-serif' },
-                    callbacks: {
-                        title: function(tooltipItems) {
-                            const item = tooltipItems[0];
-                            let label = item.chart.data.labels[item.dataIndex];
-                            if (Array.isArray(label)) {
-                              return label.join(' ');
-                            } else {
-                              return label;
-                            }
-                        }
-                    }
-                }
-            },
-            scales: {
-                y: {
-                    ticks: { 
-                        color: VoHPalette.darkGrey,
-                        font: { family: 'Lato, sans-serif', size: 10 } 
-                    },
-                    grid: { color: 'rgba(0, 35, 76, 0.1)'} // VoH_DarkBlue with alpha
-                },
-                x: {
-                    ticks: { 
-                        color: VoHPalette.darkGrey,
-                        font: { family: 'Lato, sans-serif', size: 10 } 
-                    },
-                    grid: { color: 'rgba(0, 35, 76, 0.05)'} // Lighter grid for x-axis
-                }
-            }
-        };
-
-        function wrapLabel(str, maxWidth) {
-            if (str.length <= maxWidth) return str;
-            const words = str.split(' ');
-            let currentLine = '';
-            const lines = [];
-            for (const word of words) {
-                if ((currentLine + word).length > maxWidth && currentLine.length > 0) {
-                    lines.push(currentLine.trim());
-                    currentLine = '';
-                }
-                currentLine += word + ' ';
-            }
-            lines.push(currentLine.trim());
-            return lines;
-        }
-
-        // Ukraine Costs Chart
-        const ukraineCostsCtx = document.getElementById('ukraineCostsChart');
-        if (ukraineCostsCtx) {
-            new Chart(ukraineCostsCtx.getContext('2d'), {
-                type: 'bar',
-                data: {
-                    labels: [wrapLabel('Infrastructure Damage', 15), wrapLabel('Reconstruction Needs (10yr)',15)],
-                    datasets: [{
-                        label: 'Cost in USD Billions',
-                        data: [176, 524],
-                        backgroundColor: [VoHPalette.accentRed, VoHPalette.primaryBlue],
-                        borderColor: [VoHPalette.accentRed, VoHPalette.primaryBlue],
-                        borderWidth: 1
-                    }]
-                },
-                options: {...defaultChartOptions}
-            });
-        }
-
-        // Gaza Damage Chart
-        const gazaDamageCtx = document.getElementById('gazaDamageChart');
-        if (gazaDamageCtx) {
-            new Chart(gazaDamageCtx.getContext('2d'), {
-                type: 'doughnut',
-                data: {
-                    labels: [wrapLabel('Housing',12), wrapLabel('Commerce & Industry',12), wrapLabel('Lifeline Infra.',12), wrapLabel('Other',12)],
-                    datasets: [{
-                        label: 'Damage Breakdown (%)',
-                        data: [53, 20, 15, 12], 
-                        backgroundColor: [VoHPalette.accentRed, VoHPalette.accentYellow, VoHPalette.primaryBlue, VoHPalette.lightBlue],
-                        hoverOffset: 4,
-                        borderColor: VoHPalette.white,
-                        borderWidth: 2
-                    }]
-                },
-                options: {...defaultChartOptions, cutout: '60%'}
-            });
-        }
-
-        // Gaza Aid Chart
-        const gazaAidCtx = document.getElementById('gazaAidChart');
-        if (gazaAidCtx) {
-            new Chart(gazaAidCtx.getContext('2d'), {
-                type: 'bar',
-                data: {
-                    labels: [wrapLabel('OPT Flash Appeal 2025', 20)],
-                    datasets: [
-                        {
-                            label: 'Required (Billion USD)',
-                            data: [4.073],
-                            backgroundColor: VoHPalette.accentRed,
-                        },
-                        {
-                            label: 'Funded (Billion USD)',
-                            data: [0.638], 
-                            backgroundColor: VoHPalette.accentGreen,
-                        }
-                    ]
-                },
-                options: {...defaultChartOptions}
-            });
-        }
-
-        // Kashmir Spending Chart
-        const kashmirSpendingCtx = document.getElementById('kashmirSpendingChart');
-        if (kashmirSpendingCtx) {
-            new Chart(kashmirSpendingCtx.getContext('2d'), {
-                type: 'bar',
-                data: {
-                    labels: [wrapLabel('India Defense Budget (2025p)',18), wrapLabel('Pakistan Defense Budget (2025p)',18)],
-                    datasets: [{
-                        label: 'Annual Defense Budget (USD Billions)',
-                        data: [80, 11],
-                        backgroundColor: [VoHPalette.primaryBlue, VoHPalette.accentRed],
-                        borderColor: [VoHPalette.primaryBlue, VoHPalette.accentRed],
-                        borderWidth: 1
-                    }]
-                },
-                options: {...defaultChartOptions}
-            });
-        }
-        
-        // Sudan Food Insecurity Chart
-        const sudanFoodInsecurityCtx = document.getElementById('sudanFoodInsecurityChart');
-        if (sudanFoodInsecurityCtx) {
-            new Chart(sudanFoodInsecurityCtx.getContext('2d'), {
-                type: 'doughnut',
-                data: {
-                    labels: [wrapLabel('Acute Food Insecurity (IPC3+)',18), wrapLabel('Rest of Population',18)],
-                    datasets: [{
-                        label: 'Population Share (%)',
-                        data: [52, 48], 
-                        backgroundColor: [VoHPalette.accentRed, VoHPalette.accentGreen],
-                        hoverOffset: 4,
-                        borderColor: VoHPalette.white,
-                        borderWidth: 2
-                    }]
-                },
-                options: {...defaultChartOptions, cutout: '60%'}
-            });
-        }
-        
-        // China/Taiwan Potential Impact Chart
-        const chinaTaiwanImpactCtx = document.getElementById('chinaTaiwanImpactChart');
-        if (chinaTaiwanImpactCtx) {
-            new Chart(chinaTaiwanImpactCtx.getContext('2d'), {
-                type: 'bar',
-                data: {
-                    labels: [wrapLabel('Taiwan Conflict (War Scenario)',15), wrapLabel('Taiwan Conflict (Blockade)',15), wrapLabel('Ukraine War (Global Cost)',15)],
-                    datasets: [{
-                        label: 'Est. Global Economic Cost (USD Trillions, Year 1)',
-                        data: [10, 5, 0.25], 
-                        backgroundColor: [VoHPalette.accentRed, VoHPalette.accentYellow, VoHPalette.primaryBlue],
-                    }]
-                },
-                options: {...defaultChartOptions}
-            });
-        }
-
-        // Taiwan Semiconductor Chart
-        const taiwanSemiconductorCtx = document.getElementById('taiwanSemiconductorChart');
-        if (taiwanSemiconductorCtx) {
-            new Chart(taiwanSemiconductorCtx.getContext('2d'), {
-                type: 'doughnut',
-                data: {
-                    labels: [wrapLabel('Taiwan Share (Advanced Logic Chips)', 20), wrapLabel('Rest of World', 20)],
-                    datasets: [{
-                        label: 'Global Production Share (%)',
-                        data: [92, 8], 
-                        backgroundColor: [VoHPalette.primaryBlue, VoHPalette.lightBlue],
-                        hoverOffset: 4,
-                        borderColor: VoHPalette.white,
-                        borderWidth: 2
-                    }]
-                },
-                options: {...defaultChartOptions, cutout: '60%'}
-            });
-        }
-
-        // Sticky Nav Active State
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const firstNavLink = document.querySelector('.nav-link'); // To activate the first link by default
-
-        function updateActiveLink() {
-            let current = '';
-            // Set intro as current if at the top of the page
-            if (pageYOffset < sections[0].offsetTop - 150) { // 150 is nav height + threshold
-                 current = 'intro';
-            } else {
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 150) { 
-                        current = section.getAttribute('id');
-                    }
-                });
-            }
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
+        // Simple smooth scrolling for any remaining navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
-        }
-        
-        window.addEventListener('scroll', updateActiveLink);
-        // Call it once on load to set the initial state
-        if (firstNavLink && sections.length > 0) {
-             updateActiveLink();
-        }
-
-        // Ensure all charts are initialized after DOM is ready
-        document.addEventListener('DOMContentLoaded', () => {
-            // Chart initializations are already outside this block,
-            // but this is good practice if they were inside.
-            // Adding null checks for each canvas element before creating a chart.
         });
-
     </script>
 </body>
 </html>
